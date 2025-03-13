@@ -1,3 +1,4 @@
+import { Avatar } from './Avatar';
 import styles from './Sidebar.module.css';
 import { PencilLine } from '@phosphor-icons/react'
 export function Sidebar(){
@@ -8,8 +9,7 @@ export function Sidebar(){
 
 
             <div className={styles.profile}>
-                <img className={styles.avatar} src="https://media.licdn.com/dms/image/v2/D4D03AQEAXy4QT3FM8w/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1699627425714?e=1747267200&v=beta&t=_jwT_MnaYrfXzY4cRCY9Qiaki0frl7-kv0fk1o4tH2k" />
-
+                <Avatar hasBorder src = 'https://media.licdn.com/dms/image/v2/D4D03AQEAXy4QT3FM8w/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1699627425714?e=1747267200&v=beta&t=_jwT_MnaYrfXzY4cRCY9Qiaki0frl7-kv0fk1o4tH2k'/>
 
                 <strong>Pedro Priori</strong>
                 <span> Developer FullStack JR</span>

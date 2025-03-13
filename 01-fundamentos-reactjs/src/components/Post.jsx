@@ -1,10 +1,12 @@
+import { Avatar } from './Avatar';
+import { Comment } from './Comment';
 import styles from './Post.module.css';
 export function Post(){
     return (
         <article className={styles.Post}>
             <header>
                 <div className= {styles.author}>
-                    <img className={styles.avatar} src="https://media.licdn.com/dms/image/v2/D4D03AQEAXy4QT3FM8w/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1699627425714?e=1747267200&v=beta&t=_jwT_MnaYrfXzY4cRCY9Qiaki0frl7-kv0fk1o4tH2k" />
+                    <Avatar hasBorder  src="https://media.licdn.com/dms/image/v2/D4D03AQEAXy4QT3FM8w/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1699627425714?e=1747267200&v=beta&t=_jwT_MnaYrfXzY4cRCY9Qiaki0frl7-kv0fk1o4tH2k" />
                     <div className = {styles.authorInfo}>
                         <strong>Pedro Priori</strong>
                         <span>Developer FullStack JR</span>
@@ -21,7 +23,7 @@ export function Post(){
                 <p>
                     <a href='#'>#novoprojeto</a>{' '}
                     <a href="">#nlw </a>{''}
-                    <a href="">#rocketseat </a>
+                    <a href="">#rocketseat</a>
                 </p>
             </div>
 
@@ -38,6 +40,12 @@ export function Post(){
                     <button type="submit">Comentar</button>
                 </footer>
             </form>
+
+            <div className={styles.commentList}>
+                <Comment/>
+                <Comment/>
+                <Comment/>
+            </div>
         </article>
     );
 }
